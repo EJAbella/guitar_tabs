@@ -1,0 +1,177 @@
+nav {
+  font-family: 'Poor Story', cursive;
+  color: #EBA179;
+  display: block;
+  background-image: url(http://weknowyourdreams.com/images/guitar/guitar-05.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 30px;
+  box-shadow: 0 5px 15px 5px black;
+}
+
+nav > h2 {
+  margin-top: 80px;
+}
+
+body {
+  background-image: url(http://s1.1zoom.me/big0/93/363342-admin.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: rgb(231, 231, 231);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.row {
+  width: 100%;
+  padding: 20px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.tabcontent {
+    float: left;
+    padding: 0px;
+    border-left: none;
+    background-color: rgba(244, 244, 244, 1);
+    box-shadow: 5px 5px 5px black;
+    padding: 5px 20px 20px 20px;
+    border-radius: 10px;
+    margin-left: 15%;
+    z-index: 2;
+}
+
+.tabcontent > .row {
+  padding: 0px;
+}
+
+.chordBtns {
+  padding: 0px;
+}
+
+.chordBtn {
+  margin-bottom: 10px;
+}
+
+.instructions {
+  font-size: 15px;
+  color: black;
+  border: 1px solid black;
+  background-color: rgba(209, 144, 78, 1);
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px grey;
+  padding: 10px;
+  height: 100%;
+  margin-left: 40px;
+}
+
+#tabTitle {
+  font-family: Arial;
+  margin-bottom: 20px;
+  padding: 10px 10px;
+  border-bottom: 1px solid black;
+}
+
+#chordFingering > p {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.tabCont {
+  padding-top: 10px;
+}
+
+.tabs {
+  margin-top: 20px;
+}
+
+.tabs > p {
+  display: inline-block;
+  font-family: monospace;
+}
+
+.pageTab {
+    margin-top: 40px;
+    position: absolute;
+    float: left;
+    background-color: #ccc;
+    width: 20%;
+    height: auto;
+    padding: 0px;
+    padding-right: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+    z-index: 1;
+}
+
+.pageTab:before {
+  box-shadow: 5px 5px 5px black;
+  z-index: -1;
+}
+
+.pageTab button {
+    display: block;
+    background-color: #ccc;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.pageTab button:hover {
+    background-color: #ddd;
+}
+
+.pageTab button.active {
+    background-color: #F4F4F4;
+    border-right: none;
+}
+
+/* #createTabCont {
+  margin-top: 60vh;
+  margin-left: 30px;
+  width: 15%;
+  z-index: 0;
+  padding-right: 20px;
+}
+
+#createTab {
+  background-color: rgb(166, 213, 133)
+}
+
+#createTab:hover {
+  background-color: rgb(86, 180, 42);
+} */
+
+#message {
+  opacity: 0;
+  margin: 5px 0px 0px 0px;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  border-radius: 10px;;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0}
+  16.67% {opacity: 1}
+  83.33% {opacity: 1}
+  100% {opacity: 0}
+}
+
+footer {
+  padding: 20px;
+  color: whitesmoke;
+  height: 60px;
+  background-color: rgba(64, 64, 64, 0.56);
+  bottom: 0;
+  text-align: center;
+}

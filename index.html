@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Poor+Story" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.2/litera/bootstrap.min.css" rel="stylesheet" integrity="sha384-EHn394B6EAtw4HZN4uqeUmZQO1bj/l7+L9ToHR0izJSXw2BNB5cuhR3weBJup/95" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h2>No Need to <i>Fret!</i></h2>
+        <h4>A simple way to keep tabs</h4>
+      </nav>
+    </header>
+  <div class='row' id='mainCont'>
+    <div class="pageTab col-2">
+      <button class='tablinks active' onclick='openTab(event, "tab1")' id='1'>New Tab</button>
+      <button class='tablinks' onclick='openTab(event, "tab2")' id='2'>New Tab</button>
+      <button class='tablinks' onclick='openTab(event, "tab3")' id='3'>New Tab</button>
+    </div>
+    <!-- <div class='pageTab' id='createTabCont'>
+      <button type="button" name="button" id='createTab'>Create New</button>
+    </div> -->
+
+    <div class="tabcontent col-10" id='tab1'>
+      <h2 contenteditable="true" id='tabTitle'>Song Name - Song Artist</h2>
+      <div class="row">
+        <div class="chordBtns col-2">
+          <select class="chordBtn chordSelector" id='chordSelector' name="">
+            <option value="A">A</option>
+            <option value="A%23">A#/Bb</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="C%23">C#/Db</option>
+            <option value="D">D</option>
+            <option value="D%23">D#/Eb</option>
+            <option value="E">E</option>
+            <option value="F">F</option>
+            <option value="F%23">F#/Gb</option>
+            <option value="G">G</option>
+            <option value="G%23">G#/Ab</option>
+          </select>
+          <select class="chordBtn majorMinor" name="" id='majorMinor'>
+            <option value="major">Major</option>
+            <option value="minor">Minor</option>
+          </select>
+          <div id="chordFingering">
+            <p>e: 0<br>B: 2<br>G: 2<br>D: 2<br>A: 0<br>E: x</p>
+          </div>
+        </div>
+        <div class="col-9 instructions">
+          <h5>Tips for Tabs</h5>
+          <ul>
+            <li>Select a chord from the list to the left to get the chord structure. If you would like to add it to your tab, press Enter.</li>
+            <li>Select a string by either pressing the string letter or using the up/down keys. Press a number to enter in that fret for the selected string.</li>
+            <li>You can remove the last entry by pressing the Backspace key.</li>
+          </ul>
+        </div>
+      </div>
+      <p id='message'>placeholder</p>
+
+      <div class="tabCont">
+        <select class="stringSelect" name="" id='stringSelect'>
+          <option value="e">e</option>
+          <option value="B">B</option>
+          <option value="G">G</option>
+          <option value="D">D</option>
+          <option value="A">A</option>
+          <option value="E">E</option>
+        </select>
+        <input class='fret' type="" name="" value="" id='fret'>
+        <button type="button" name="button" id='addToTab'>Add!</button>
+        <button type="button" name="button" id='addChord'>Add Current Chord</button>
+        <button type="button" name="button" id='removeLast'>Remove Last Tab</button>
+        <button type="button" name="button" id='reset'>Reset Tab</button>
+        <button type="button" name="button" id='save'>Save</button>
+        <div class="tabs" id='tabs'>
+          <p>e -<br>B -<br>G -<br>D -<br>A -<br>E -</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tabcontent col-10" id='tab2' style='display: none'>
+      <h2 contenteditable="true" id='tabTitle'>Song Name - Song Artist</h2>
+      <div class="row">
+        <div class="chordBtns col-2">
+          <select class="chordBtn chordSelector" id='chordSelector' name="">
+            <option value="A">A</option>
+            <option value="A%23">A#/Bb</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="C%23">C#/Db</option>
+            <option value="D">D</option>
+            <option value="D%23">D#/Eb</option>
+            <option value="E">E</option>
+            <option value="F">F</option>
+            <option value="F%23">F#/Gb</option>
+            <option value="G">G</option>
+            <option value="G%23">G#/Ab</option>
+          </select>
+          <select class="chordBtn majorMinor" name="" id='majorMinor'>
+            <option value="major">Major</option>
+            <option value="minor">Minor</option>
+          </select>
+          <div id="chordFingering">
+            <p>e: 0<br>B: 2<br>G: 2<br>D: 2<br>A: 0<br>E: x</p>
+          </div>
+        </div>
+        <div class="col-9 instructions">
+          <h5>Tips for Tabs</h5>
+          <ul>
+            <li>Select a chord from the list to the left to get the chord structure. If you would like to add it to your tab, press Enter.</li>
+            <li>Select a string by either pressing the string letter or using the up/down keys. Press a number to enter in that fret for the selected string.</li>
+            <li>You can remove the last entry by pressing the Backspace key.</li>
+          </ul>
+        </div>
+      </div>
+      <p id='message'>placeholder</p>
+
+      <div class="tabCont">
+        <select class="stringSelect" name="" id='stringSelect'>
+          <option value="e">e</option>
+          <option value="B">B</option>
+          <option value="G">G</option>
+          <option value="D">D</option>
+          <option value="A">A</option>
+          <option value="E">E</option>
+        </select>
+        <input class='fret' type="" name="" value="" id='fret'>
+        <button type="button" name="button" id='addToTab'>Add!</button>
+        <button type="button" name="button" id='addChord'>Add Current Chord</button>
+        <button type="button" name="button" id='removeLast'>Remove Last Tab</button>
+        <button type="button" name="button" id='reset'>Reset Tab</button>
+        <button type="button" name="button" id='save'>Save</button>
+        <div class="tabs" id='tabs'>
+          <p>e -<br>B -<br>G -<br>D -<br>A -<br>E -</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tabcontent col-10" id='tab3' style='display: none'>
+      <h2 contenteditable="true" id='tabTitle'>Song Name - Song Artist</h2>
+      <div class="row">
+        <div class="chordBtns col-2">
+          <select class="chordBtn chordSelector" id='chordSelector' name="">
+            <option value="A">A</option>
+            <option value="A%23">A#/Bb</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="C%23">C#/Db</option>
+            <option value="D">D</option>
+            <option value="D%23">D#/Eb</option>
+            <option value="E">E</option>
+            <option value="F">F</option>
+            <option value="F%23">F#/Gb</option>
+            <option value="G">G</option>
+            <option value="G%23">G#/Ab</option>
+          </select>
+          <select class="chordBtn majorMinor" name="" id='majorMinor'>
+            <option value="major">Major</option>
+            <option value="minor">Minor</option>
+          </select>
+          <div id="chordFingering">
+            <p>e: 0<br>B: 2<br>G: 2<br>D: 2<br>A: 0<br>E: x</p>
+          </div>
+        </div>
+        <div class="col-9 instructions">
+          <h5>Tips for Tabs</h5>
+          <ul>
+            <li>Select a chord from the list to the left to get the chord structure. If you would like to add it to your tab, press Enter.</li>
+            <li>Select a string by either pressing the string letter or using the up/down keys. Press a number to enter in that fret for the selected string.</li>
+            <li>You can remove the last entry by pressing the Backspace key.</li>
+          </ul>
+        </div>
+      </div>
+      <p id='message'>placeholder</p>
+
+      <div class="tabCont">
+        <select class="stringSelect" name="" id='stringSelect'>
+          <option value="e">e</option>
+          <option value="B">B</option>
+          <option value="G">G</option>
+          <option value="D">D</option>
+          <option value="A">A</option>
+          <option value="E">E</option>
+        </select>
+        <input class='fret' type="" name="" value="" id='fret'>
+        <button type="button" name="button" id='addToTab'>Add!</button>
+        <button type="button" name="button" id='addChord'>Add Current Chord</button>
+        <button type="button" name="button" id='removeLast'>Remove Last Tab</button>
+        <button type="button" name="button" id='reset'>Reset Tab</button>
+        <button type="button" name="button" id='save'>Save</button>
+        <div class="tabs" id='tabs'>
+          <p>e -<br>B -<br>G -<br>D -<br>A -<br>E -</p>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- <footer>
+      <p></p>
+    </footer> -->
+  <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js'></script>
+  <script type="text/javascript" src='script.js' id='jScript'></script>
+  </body>
+</html>
